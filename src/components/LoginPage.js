@@ -27,6 +27,10 @@ const LoginPage = ({ handleGoogleLoing }) => {
     history.push("/profile");
     handleGoogleLoing(response.profileObj.name, response.profileObj.imageUrl);
   };
+  const googleFailure = () => {
+    alert("error");
+    history.push("/");
+  };
   return (
     <section className="From my-4 mx-5">
       <div className="container">
@@ -75,7 +79,7 @@ const LoginPage = ({ handleGoogleLoing }) => {
             <GoogleLogin
               clientId="606406346575-5q8sagsg1d9o2nsdh4ssh1ep87e4il6c.apps.googleusercontent.com"
               onSuccess={responseGoogle}
-              onFailure={responseGoogle}
+              onFailure={googleFailure}
               className="googleButton"
             />
           </div>
