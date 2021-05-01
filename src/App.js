@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import LoginPage from "./components/LoginPage";
+import Profile from "./components/Profile";
+import { Route, Switch } from "react-router-dom";
+import proImg from "./images/image3.jpg";
 
 function App() {
+  const [userName, setUserName] = useState("Maite S. Casillas Masluia");
+  const [Image, setImage] = useState(proImg);
+  const handleGoogleLoing = (Name, Img) => {
+    setImage(Img);
+    setUserName(Name);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/">
+          <LoginPage handleGoogleLoing={handleGoogleLoing} />
+        </Route>
+        <Route exact path="/profile">
+          <Profile userName={userName} Image={Image} />
+        </Route>
+      </Switch>
     </div>
   );
 }

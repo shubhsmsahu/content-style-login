@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(177, 189, 189);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row {
+  background: white;
+  border-radius: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* .formContent {
+  margin: 0 ;
+} */
+.btn1 {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: black;
   color: white;
+  border-radius: 4px;
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.btn1:hover {
+  background-color: whitesmoke;
+  border: 1px solid;
+  color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.google {
+  text-align: center;
+  align-items: center;
+  align-content: center;
 }
+.googleButton {
+  margin: 50% 0;
+}
+.imageProfile {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 0 20%;
+}
+.btn2 {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(143, 55, 224);
+  color: white;
+  font-weight: bold;
+  margin: 20% 0;
+}
+.btn2:hover {
+  background-color: rgb(202, 102, 242);
+  border: 1px solid;
+  color: #000000;
+}
+.details {
+  color: rgb(133, 133, 133);
+}
+.social-link {
+  height: 75px;
+  width: 75px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px;
+  line-height: 97px;
+  box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+.fa {
+  transition: all 0.3s linear;
+}
+.social-link:hover i {
+  transform: scale(1.1);
+}
+.fa-instagram {
+  color: #e84393;
+}
+.fa-youtube-square {
+  color: #e84118;
+}
+.fa-linkedin-square {
+  color: #0097e6;
+}
+.fa-twitter-square {
+  color: #0097e6;
+}
+.fa-snapchat-square {
+  color: rgb(243, 243, 34);
+}
+.fa-eye {
+  margin: 5px 10px;
+}
+/* .fa-thumbs-up{ */
+/* } */
