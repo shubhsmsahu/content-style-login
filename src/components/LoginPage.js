@@ -23,7 +23,7 @@ const LoginPage = ({ handleGoogleLoing }) => {
     }
   };
   const responseGoogle = (response) => {
-    // console.log(response);
+    console.log(response);
     history.push("/profile");
     handleGoogleLoing(response.profileObj.name, response.profileObj.imageUrl);
   };
